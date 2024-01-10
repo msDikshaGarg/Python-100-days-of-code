@@ -1,8 +1,8 @@
+# Importing libraries
 import os
 from artwork import art
-# Tip calculator
-# Greeting
 
+# Printing greeting artwork
 print(art)
 
 # Bill amount
