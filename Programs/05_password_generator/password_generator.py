@@ -1,17 +1,7 @@
 import random
 import string
 
-art = """
- ____        _                             _   ____                  
-/ ___| _ __ (_) ___  ___    __ _ _ __   __| | / ___|  ___  _ __  ___ 
-\___ \| '_ \| |/ _ \/ __|  / _` | '_ \ / _` | \___ \ / _ \| '_ \/ __|
- ___) | |_) | |  __/\__ \ | (_| | | | | (_| |  ___) | (_) | | | \__ \\
-|____/| .__/|_|\___||___/  \__,_|_| |_|\__,_| |____/ \___/|_| |_|___/
-|_ _|_|_|   ___                                                      
- | || '_ \ / __|                                                     
- | || | | | (__ _                                                    
-|___|_| |_|\___(_)      \n\n     
-"""
+from artwork import art
 
 # Generating a list of lowercase and uppercase alphabets using the string module
 lowercase = list(string.ascii_lowercase)

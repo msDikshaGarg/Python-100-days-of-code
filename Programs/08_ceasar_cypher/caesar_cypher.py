@@ -1,18 +1,8 @@
 ## Fix if number larger than 26 -> mod
 
 import string
-# Greeting
-art = """
- ____        _                             _   ____                  
-/ ___| _ __ (_) ___  ___    __ _ _ __   __| | / ___|  ___  _ __  ___ 
-\___ \| '_ \| |/ _ \/ __|  / _` | '_ \ / _` | \___ \ / _ \| '_ \/ __|
- ___) | |_) | |  __/\__ \ | (_| | | | | (_| |  ___) | (_) | | | \__ \\
-|____/| .__/|_|\___||___/  \__,_|_| |_|\__,_| |____/ \___/|_| |_|___/
-|_ _|_|_|   ___                                                      
- | || '_ \ / __|                                                     
- | || | | | (__ _                                                    
-|___|_| |_|\___(_)      \n\n     
-"""
+from artwork import art
+
 # List of alphabets to create cypher
 alphabets = list(string.ascii_lowercase)*2
 

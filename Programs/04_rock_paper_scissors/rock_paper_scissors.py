@@ -1,35 +1,7 @@
 ## Can add best of, + infinite mode
 
 import random
-
-# Art for each choice
-rock_art = """   
-  _______
- /       \\
-/         \\
-\\         /
- \\_______/
-  """
-scissor_art = """
-    _    _
-   (_)  / )
-     | (_/ 
-    _+/  
-   //|\\
-  // | )
- (/  |/    
-"""
-
-paper_art = """
- ______________
-|              |
-|              |
-|              |
-|              |
-|              |
-|______________|
-
-"""
+from artwork import rock_art, paper_art, scissor_art
 
 # List for possible choices and their respective arts
 image = [rock_art, paper_art, scissor_art]

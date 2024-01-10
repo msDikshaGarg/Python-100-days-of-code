@@ -1,16 +1,6 @@
 # Printing greetings and art
-art = """
-                      __   __                 _                                     
- {}           {}      \ \ / /__  _   _ _ __  | |_ _ __ ___  __ _ ___ _   _ _ __ ___ 
-   \  _---_  /         \ V / _ \| | | | '__| | __| '__/ _ \/ _` / __| | | | '__/ _ \\
-    \/     \/           | | (_) | |_| | |    | |_| | |  __/ (_| \__ \ |_| | | |  __/
-     |() ()|            |_|\___/ \__,_|_|  _ _\__|_|  \___|\__,_|___/\__,_|_|  \___|
-      \ + /                 __ ___      ____ _(_) |_ ___   _   _  ___  _   _            
-     / HHH  \             / _` \ \ /\ / / _` | | __/ __| | | | |/ _ \| | | |           
-    /  \_/   \           | (_| |\ V  V / (_| | | |_\__ \ | |_| | (_) | |_| |           
-  {}          {}          \__,_| \_/\_/ \__,_|_|\__|___/  \__, |\___/ \__,_|       
-                                                          |___/          \n\n          
-"""
+from artwork import art
+
 play_again = True
 
 def try_again():
@@ -24,7 +14,6 @@ def try_again():
 
 # Taking choices as inputs and choosing the next steps based on user choices
 while play_again != False:
-    #print(art)
     print(art)
     print("Welcome to treasure island. We have hidden a secret treasure somewhere on this island, your task is to find the treasure.")
     ch1 = input("You come across a fork in the road, do you go left or right?\n").lower()
