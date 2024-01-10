@@ -4,5 +4,5 @@
 
  Since this is my version, the solutions might look a little different from the solutions discussed in the course. They also might have additional features that I thought were suitable to add. 
 
- Enjoy!
+ ![Enjoy School](GIFs/gif_simpsons.gif)
 
