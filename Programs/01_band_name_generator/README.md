@@ -1,6 +1,6 @@
 # Random Band Name Generator
 
-![Band kids](GIFs/giphy_band.gif)
+![Band kids](../../GIFs/giphy_band.gif)
 
 
 In this program, we are supposed to take user input and generate a band name using a place name and type of animal. 
