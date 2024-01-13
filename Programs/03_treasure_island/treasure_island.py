@@ -1,8 +1,9 @@
-# Printing greetings and art
+# Importing greetings and art
 from artwork import art
 
 play_again = True
 
+# Try again flag
 def try_again():
     again = input("Type 'yes' to try again and 'no' to quit.\n")
     while again not in ['yes', 'no']:
@@ -12,7 +13,7 @@ def try_again():
     else:
         return False
 
-# Taking choices as inputs and choosing the next steps based on user choices
+# Taking choices as inputs and choosing the next steps based on user choices. If the user fails to pick the right answer, giving them the choice to try again.
 while play_again != False:
     print(art)
     print("Welcome to treasure island. We have hidden a secret treasure somewhere on this island, your task is to find the treasure.")

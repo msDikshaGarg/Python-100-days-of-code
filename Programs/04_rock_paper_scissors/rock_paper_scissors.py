@@ -1,5 +1,4 @@
-## Can add best of, + infinite mode
-
+# Importing libraries and artwork files
 import random
 from artwork import rock_art, paper_art, scissor_art
 
@@ -7,11 +6,14 @@ from artwork import rock_art, paper_art, scissor_art
 image = [rock_art, paper_art, scissor_art]
 choice = ['rock', 'paper', 'scissor']
 
+# Option to play again
 play_again = True
 
+# Counters for total number of player wins and computer wins
 player_wins = 0
 computer_wins = 0
 
+# Making the try again function to add the option to play again
 def try_again():
     again = input(f"Want to go again? Yes or No.\n")
     while again not in ['yes', 'no']:
