@@ -1,3 +1,4 @@
+# Importing relevant libraries and files
 import os
 from artwork import art, horse
 
@@ -33,7 +34,7 @@ while other_bidder != False:
     # Asking if other bidders exist     
     more = input("Are there other bidders? Yes/No.\n").lower()
 
-    # If invalif input then continue asking for proper inputs
+    # If invalid input then continue asking for proper inputs
     while more not in ['yes', 'no']:
         more = input("Sorry was that a yes or no?")
         # If no more bidders then change other bidder flag and exit the loop

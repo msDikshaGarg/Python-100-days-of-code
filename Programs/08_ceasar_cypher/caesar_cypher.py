@@ -1,5 +1,4 @@
-## Fix if number larger than 26 -> mod
-
+# Importing libraries and relevant files
 import string
 from artwork import art
 
@@ -26,7 +25,7 @@ def cypher(funct, message, shift):
 # Ending program flag
 end = False 
 
-# While user doesn't want to run program 
+# While user doesn't want to end the program 
 while end == False:
     print(art)
     print("Welcome to Spies and Sons Inc.!\nWe are back again with our special spy encryption and decryption machine.")
@@ -44,5 +43,6 @@ while end == False:
         ending = input("Please enter a valid input.\n").lower()
     if ending == 'y':
         end = True
+# Prints a goodbye message on exit
 print("Thank you! Goodbye.")
         

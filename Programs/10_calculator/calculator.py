@@ -1,3 +1,4 @@
+# Importing relevant libraries and files
 import os
 from artwork import logo
 
