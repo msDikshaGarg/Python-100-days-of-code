@@ -1,6 +1,6 @@
+# Importing the relevant libraries and files
 import random
 import string
-
 from artwork import art
 
 # Generating a list of lowercase and uppercase alphabets using the string module
