@@ -39,27 +39,13 @@ while play_again == True:
     # Checking the result based on user and computer choices and printing the outcome
     if player_num == computer:
         print("It's a tie.")
-        player_wins += 1
-        computer_wins += 1
         print(f"You have won {player_wins} times and the computer has won {computer_wins} times.")
-        play_again = try_again()
-    elif player_num == 2 and computer == 0:
+    elif (player_num == 2 and computer == 0) or (player_num < computer):
         print("Sorry you lost.")
         computer_wins += 1
         print(f"You have won {player_wins} times and the computer has won {computer_wins} times.")
-        play_again = try_again()
-    elif computer == 2 and player_num == 0:
-        print("Woohoo! You are a champion.")
-        player_wins += 1
-        print(f"You have won {player_wins} times and the computer has won {computer_wins} times.")
-        play_again = try_again()
-    elif player_num < computer:
-        print("Sorry, you lost.")
-        computer_wins += 1
-        print(f"You have won {player_wins} times and the computer has won {computer_wins} times.")
-        play_again = try_again()
     else: 
         print("Woohoo! You are a champion.")
         player_wins += 1
         print(f"You have won {player_wins} times and the computer has won {computer_wins} times.")
-        play_again = try_again()
+    play_again = try_again()

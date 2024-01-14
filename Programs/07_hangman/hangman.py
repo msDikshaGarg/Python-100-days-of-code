@@ -17,7 +17,6 @@ while play_again == True:
     guessed = []
 
     # Variables to keep track of lives and stage which the player is at
-    lives = 6
     stage = 0
 
     # Game over flag
@@ -37,13 +36,12 @@ while play_again == True:
                     user[i] = guess
         else:
             # Else the player looses lives
-            lives -= 1
             stage += 1
         print(''.join(user))
         print(hangman_stages[stage])
 
         # When all lives are lost game over flag becomes true and the player loses, the word is displayed
-        if lives == 0:
+        if stage == 6:
             game_over = True
             print("Sorry, you lose. Try again.")
             print(f"Your word was '{''.join(word)}'.")
