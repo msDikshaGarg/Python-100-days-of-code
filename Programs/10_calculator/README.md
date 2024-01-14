@@ -1,4 +1,4 @@
-# Silent Auction
+# Calculator
 
 ![Calculator](../../GIFs/giphy_calculated.gif)
 

@@ -1,4 +1,4 @@
-# Silent Auction
+# BlackJack
 
 ![Blackjack](../../GIFs/giphy_blackjack.gif)
 
