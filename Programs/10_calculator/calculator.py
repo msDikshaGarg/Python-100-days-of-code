@@ -26,13 +26,13 @@ def calculator():
     # Printing logo
     print(logo)
     # Variable input (first)
-    n1 = int(input("What's the first number?\n"))
+    n1 = float(input("What's the first number?\n"))
 
     # While loop to check if the user wants to continue calculating if yes then steps repeat with n1 = value
     while True:
         # Operation and second number inputs
         op = input("What operation would you like to perform?\n +, -, * or /\n")
-        n2 = int(input("What's the next number?\n"))
+        n2 = float(input("What's the next number?\n"))
         # Calculation
         calculation = operations[op]
         value = round(calculation(n1,n2),2)
