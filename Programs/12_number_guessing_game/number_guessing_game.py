@@ -9,7 +9,7 @@ def greeting():
     print("You are now playing the number guessing game!")
     print("I'm thinking of a number between 1 and 100.")
 
-# Declairing global variables 
+# Declaring global variables 
 lives = 0
 try_again = True
 

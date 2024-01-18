@@ -2,11 +2,11 @@
 import string
 from artwork import art
 
-# List of alphabets to create cypher
+# List of alphabets to create cipher
 alphabets = list(string.ascii_lowercase)*2
 
-# Cypher function definition
-def cypher(funct, message, shift):
+# Cipher function definition
+def cipher(funct, message, shift):
     # If decoding then shift number gets subtracted
     shift = shift % 26
     if funct == 'decode':
@@ -35,9 +35,9 @@ while end == False:
     shift = int(input("What's the secret shift number?\n"))
     
     # Calls the function for output
-    cypher(funct, message, shift)
+    cipher(funct, message, shift)
     
-    # Checks if user wants to end, chenges the flag if user selects yes
+    # Checks if user wants to end, changes the flag if user selects yes
     ending = input("\nIs this the message you want to continue with? Type 'Y' for yes, 'N' for no.\n").lower()
     while ending not in ['y', 'n']:
         ending = input("Please enter a valid input.\n").lower()

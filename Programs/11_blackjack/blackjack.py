@@ -60,7 +60,7 @@ while play_again == True:
         while user_bet > bank:
             user_bet = int(input("Sorry, you are trying to bet more money than you actually have. Try again with a lower bet or visit an ATM.\n"))
 
-        # Run function for inital cards and print art
+        # Run function for initial cards and print art
         player = select_init()
         print_art(player[0])
         print_art(player[1])
@@ -130,7 +130,7 @@ while play_again == True:
         print("You lost all your money to gambling. 😣")
         print(f"You have $ {bank} in your account now.")
         break
-    # Asks the player if they want to play anouther round
+    # Asks the player if they want to play another round
     print(f"You have $ {bank} in your account now.")
     again = input("Type 'Yes' to play again or 'No' to exit.\n")
     while again not in ['yes', 'no']:

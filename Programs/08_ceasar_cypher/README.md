@@ -1,6 +1,6 @@
-# Ceasar Cypher
+# Ceasar Cipher
 
-![Cypher](../../GIFs/giphy_encoded_message.gif)
+![Cipher](../../GIFs/giphy_encoded_message.gif)
 
 Spies and Sons Inc. is back again with their latest program for super secret spy communications. 
 
