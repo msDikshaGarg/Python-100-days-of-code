@@ -13,7 +13,7 @@ def print_report():
     print(f"Coffee : {curr_resources['coffee']}g")
     print(f"Money : ${money}")
 
-# Function to ask for coins and caculating the total money put into the machine
+# Function to ask for coins and calculating the total money put into the machine
 def take_money():
     total = 0
     print("Please insert coins for your coffee.")
@@ -73,7 +73,7 @@ while manual_stop == False:
     # Else if barista types report, then the report function runs to print a report of ingredients
     elif command == 'report':
         print_report()
-    # Else if barista types refill, the mahine refills the ingredients
+    # Else if barista types refill, the machine refills the ingredients
     elif command == 'refill':
         curr_resources = resources.copy()
         print("The machine has been refilled.")
@@ -81,7 +81,7 @@ while manual_stop == False:
         # For the order, check if all ingredients are available 
         coffee_cost = availability(command)
         if coffee_cost != False:
-            # If ingredients are avaialable, take money
+            # If ingredients are available, take money
             money_inserted = take_money()
             change = check_money(coffee_cost, money_inserted)
             if change != False:
