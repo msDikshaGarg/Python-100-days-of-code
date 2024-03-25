@@ -1,6 +1,6 @@
 # Hirst Painting Project
 
-<video src="../../GIFs/turtle_hirst_painting.mp4" controls title="Title"></video>
+![Hirst](../../GIFs/turtle_hirst_painting.gif)
 
 This is a painting inspired by [Damien Hirst](https://www.artsy.net/artist/damien-hirst).
 
