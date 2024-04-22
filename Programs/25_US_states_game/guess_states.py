@@ -7,7 +7,7 @@ image = "blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
-states_data = pd.read_csv("/Users/dikshagarg/Desktop/Python 100 days of code/Programs/25_US_states_game/50_states.csv")
+states_data = pd.read_csv("50_states.csv")
 to_guess = list(states_data["state"])
 
 while len(to_guess) > 0:
@@ -34,4 +34,4 @@ if not to_guess:
     winner.goto(-100, 0)
     state_turtle.write("Yay, you guessed all the states!", font=("Arial", 24, 'normal'))
 
-     
+screen.exitonclick()
