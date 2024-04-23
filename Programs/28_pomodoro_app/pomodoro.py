@@ -17,10 +17,9 @@ def timer_countdown(time_val):
     global stage 
     if time_val == 0:
         stage += 1
-        print(stage)
+    canvas.itemconfig(timer_text, text = time_val)
     if time_val > 0:
-        print(time_val)
-        window.after(10, timer_countdown, time_val - 1)
+        window.after(100, timer_countdown, time_val - 1)
 
 def set_timer():
     if stage <= 9:
@@ -31,15 +30,12 @@ def set_timer():
         elif stage == 9: 
             timer_countdown(BIG_BREAK)
     
-
+    
 # Window 
 window = tk.Tk()
 window.title("Pomodoro Timer")
 window.configure(bg=LIGHT_PINK)
 window.geometry("870x800")
-
-set_timer()
-
 
 # Heading label
 heading = tk.Label(text = "Pomodoro Timer", bg=LIGHT_PINK, fg=LAVENDER, font = ("Helvetica", 50, "bold"))
@@ -49,7 +45,7 @@ heading.grid(row = 1, column = 2, padx = 10, pady = 10)
 canvas = tk.Canvas(window, width = 500, height = 500, highlightthickness=0)
 tomato_photo = tk.PhotoImage(file = "tomato.png")
 canvas.create_image(250, 250, image = tomato_photo)
-canvas.create_text(250, 330, text = "00:00", fill = VIOLET, font = ("Helvetica", 35, "bold"))
+timer_text = canvas.create_text(250, 330, text = "00:00", fill = VIOLET, font = ("Helvetica", 35, "bold"))
 canvas.grid(row = 2, column = 2)
 
 # Step Label
@@ -57,12 +53,11 @@ step = tk.Label(text = "#1", bg=LIGHT_PINK, fg=LAVENDER, font = ("Helvetica", 35
 step.grid(row = 3, column = 2, padx = 10, pady = 10)
 
 # Start Button
-start_button=tk.Button(text = 'Start', font = ("Helvetica", 20, "bold"), width=10, height=2, fg = LAVENDER)
+start_button=tk.Button(text = 'Start', font = ("Helvetica", 20, "bold"), width=10, height=2, fg = LAVENDER, command = set_timer)
 start_button.grid(row = 3, column = 1, padx = 10, pady = 10)
 
 # Reset Button
 reset_button=tk.Button(text = 'Reset', font = ("Helvetica", 20, "bold"), width=10, height=2, fg = LAVENDER)
 reset_button.grid(row = 3, column = 3, padx = 10, pady = 10)
-
 
 window.mainloop()
