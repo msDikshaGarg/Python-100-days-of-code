@@ -6,3 +6,5 @@
 
  ![Enjoy School](GIFs/gif_simpsons.gif)
 
+ - Thank you [Giphy](https://giphy.com/) for having wonderful gifs! Whatever shall we do without you? 
+

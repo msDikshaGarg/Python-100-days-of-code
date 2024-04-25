@@ -7,31 +7,54 @@ LAVENDER = "#AD88C6"
 VIOLET = "#7469B6"
 
 # Time presets
-WORK = 25
-SMALL_BREAK = 5
-BIG_BREAK = 20
-stage = 1
+WORK = 1500
+SMALL_BREAK = 300
+BIG_BREAK = 1200
+stage = 0
+timer = None
 
-# Timer function
-def timer_countdown(time_val):
-    global stage 
-    if time_val == 0:
-        stage += 1
-    canvas.itemconfig(timer_text, text = time_val)
-    if time_val > 0:
-        window.after(100, timer_countdown, time_val - 1)
-
+# Setting timer 
 def set_timer():
-    if stage <= 9:
+    global stage 
+    stage += 1
+    step.config(text = f"#{stage}")
+    if stage < 9:
         if stage in [1, 3, 5, 7]:
             timer_countdown(WORK)
-        elif stage in [2, 4, 6, 8]:
+            heading.config(text = "Work")
+        elif stage in [2, 4, 6]:
             timer_countdown(SMALL_BREAK)
-        elif stage == 9: 
+            heading.config(text = "Break")
+        elif stage == 8: 
             timer_countdown(BIG_BREAK)
+            heading.config(text = "Break")
+
+# Timer functionality
+def timer_countdown(time_val):
+    time_mins = time_val // 60
+    time_secs = time_val % 60
+
+    if time_secs < 10:
+        time_secs = f"0{time_secs}"
+
+    canvas.itemconfig(timer_text, text = f"{time_mins}:{time_secs}")
+    global timer
+    if time_val > 0:
+        timer = window.after(1000, timer_countdown, time_val - 1)
+    else: 
+        set_timer()
+
+# Reset timer 
+def reset_timer():
+    global stage 
+    stage = 0
+    window.after_cancel(timer)
+    heading.config(text = "Pomodoro Timer")
+    step.config(text = "#1")
+    canvas.itemconfig(timer_text, text = "00:00")
+
     
-    
-# Window 
+# Window mainloop
 window = tk.Tk()
 window.title("Pomodoro Timer")
 window.configure(bg=LIGHT_PINK)
@@ -57,7 +80,7 @@ start_button=tk.Button(text = 'Start', font = ("Helvetica", 20, "bold"), width=1
 start_button.grid(row = 3, column = 1, padx = 10, pady = 10)
 
 # Reset Button
-reset_button=tk.Button(text = 'Reset', font = ("Helvetica", 20, "bold"), width=10, height=2, fg = LAVENDER)
+reset_button=tk.Button(text = 'Reset', font = ("Helvetica", 20, "bold"), width=10, height=2, fg = LAVENDER, command = reset_timer)
 reset_button.grid(row = 3, column = 3, padx = 10, pady = 10)
 
 window.mainloop()
