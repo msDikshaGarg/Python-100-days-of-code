@@ -61,3 +61,12 @@ class Snake:
     def left(self):
         if self.first.heading() != RIGHT:
             self.first.setheading(LEFT)
+
+    # Resetting the snake
+    def reset_snake(self):
+        for segment in self.segments:
+            segment.goto(-1000, -1000)
+        self.segments.clear()
+        self.create_snake()
+        self.first = self.segments[0]
+        self.first.shape("triangle")

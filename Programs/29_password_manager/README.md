@@ -9,7 +9,7 @@ If you have read one too many cyber-attack articles and lost your faith in inter
 
 Disclaimer: I 100% DO NOT recommend using this program to actually save passwords in this format.
 
-# How it works
+### How it works
 The UI has the logo and text boxes to type in the website name, the sign-up email or username, and the password. Additionally, the user can also generate a password if they are signing up for a new website and need a new password. Once they have entered all the values, they can press the 'Add' option to add values to a text file. Upon clicking the add button, a pop-up is displayed asking the user to check the entered values, if the user selects 'Ok' details are added, and a new pop-up shows a confirmation. If the user leaves any detail blank, an error pop-up shows to notify the user of missing entries. 
 
 The password generation is done through a password generator program previously made on Day 5.

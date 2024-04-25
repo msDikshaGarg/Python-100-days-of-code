@@ -8,7 +8,7 @@ Want to be efficient using the [Pomodoro Technique](https://en.wikipedia.org/wik
 Then this app is for you, this is the initiative to break the loop of procrastination and start getting on those tough tasks! 
 
 
-# How it works
+### How it works
 
 The color palette is first defined and the times are preset using constants at the top of the program.
 

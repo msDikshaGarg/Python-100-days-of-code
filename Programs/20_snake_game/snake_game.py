@@ -44,14 +44,14 @@ while no_collision:
     if -290 < snake.first.xcor() < 290 and -290 < snake.first.ycor() < 290:
         pass
     else: 
-        no_collision = False
-        score.collision()
+        score.reset_score()
+        snake.reset_snake()
 
     # Collision with the snake, if the snake hits its own body then the game over flag is triggered
     for i in snake.segments[1:]:
         if snake.first.distance(i) < 10:
-            no_collision = False
-            score.collision()
+            score.reset_score()
+            snake.reset_snake()
 
 # When the screen is clicked after a game is over the screen goes away
-screen.exitonclick()
+#screen.exitonclick()
