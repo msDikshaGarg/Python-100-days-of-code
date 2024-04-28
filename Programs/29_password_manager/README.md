@@ -16,7 +16,7 @@ The password generation is done through a password generator program previously 
 
 - The add entry function gets the values in the text boxes, checks if any values are blank and if not gets the confirmation from the user. If the user confirms, the text file is opened, the values are written into the file and deleted from the text boxes in the program. The final confirmation if displayed as a pop-up.
 
-# External resources used 
+### External resources used 
 
 - The color palette is selected from [ColorHunt](https://colorhunt.co/palette/ffe6e6e1afd1ad88c67469b6)
 
