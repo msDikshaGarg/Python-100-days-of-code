@@ -1,6 +1,6 @@
 # College Major Dataset Exploration
 
-This is an exploration and minor analysis of [Payscale's College Salary Report Dataset^*^](https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors) from 2008.
+This is an exploration and minor analysis of [Payscale's College Salary Report Dataset](https://www.payscale.com/college-salary-report/majors-that-pay-you-back/bachelors)* from 2008.
 
 *The data link is for the updated data from 2023.
 
