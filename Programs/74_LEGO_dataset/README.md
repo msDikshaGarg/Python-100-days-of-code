@@ -1,6 +1,6 @@
 # LEGO Data Analysis 
 
-This is an analysis of the [LEGO dataset](https://www.kaggle.com/datasets/rtatman/lego-database?select=colors.csv) 
+This is an analysis of the [LEGO dataset](https://rebrickable.com/downloads/) by Rebrickable.
 
 ![lego](../../GIFs/lego-batman.gif)
 
