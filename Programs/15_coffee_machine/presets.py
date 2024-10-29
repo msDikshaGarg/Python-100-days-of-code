@@ -56,6 +56,3 @@ ___________
 `---------'
 """
 
-end = False
-
-#while end == False:

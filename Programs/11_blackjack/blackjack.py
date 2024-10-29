@@ -56,7 +56,6 @@ while play_again == True:
         # Ask player for the amount they want to bid  
         print(f"You have $ {bank} in your account.")
         user_bet = float(input("How much do you want to bet?\n")) 
-        # The bids are only allowed in multiples of 10
         while user_bet > bank:
             user_bet = int(input("Sorry, you are trying to bet more money than you actually have. Try again with a lower bet or visit an ATM.\n"))
 
